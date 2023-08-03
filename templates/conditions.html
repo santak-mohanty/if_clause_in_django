@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Find the largest value between a,b and c using if clause</h1>
+
+
+
+        {% comment %} {% if a > b %}
+            <h1>a is max</h1>
+        {% else %}
+            <h1>b is max</h1>
+        {% endif %} {% endcomment %}
+        
+        {% if a > b and a > c %}
+            <h1>a is max  and its value is {{a}}</h1>
+        {% elif b > a and b > c %}
+            <h1>b is max and its value is {{b}}</h1>
+        {% else %}
+            <h1>c is max and its value is {{c}}</h1>
+        {% endif %}
+    </center>
+</body>
+</html>
